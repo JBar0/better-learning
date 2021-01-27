@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./pom.xml ./pom.xml
 
 # fetch all dependencies
-#RUN mvn dependency:go-offline -B
+RUN mvn dependency:go-offline -B
 
 # copy your other files
 COPY ./src ./src
